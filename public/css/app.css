@@ -1,0 +1,419 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure the body and html are set to full height */
+  html, body {
+    height: 100%; /* Full height */
+    margin: 1; /* Remove default margin */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+  }
+  
+  /* Main section to grow and center contents */
+  main {
+    flex: 1; /* Allow the main section to take up available space */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+
+  
+  /* Header styles */
+  header {
+    background: #519684; 
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Footer styles */
+  footer {
+    background: #377363; /* Consistent footer background */
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Full width */
+    color: white;
+  }
+  
+  /* Navigation styles */
+  nav {
+    margin: 1rem 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #77bac3; /* Dark teal color for links */
+    padding: 0.5rem 1rem;
+  }
+  
+  nav a:hover {
+    background-color: #77bac3; /* Light blue on hover */
+  }
+  
+  /* Main content styles */
+  .main-content {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff; /* White background for main content */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-section{
+    text-align: center;
+  }
+  
+  .navbar {
+    text-align: right;
+    margin: 0px;
+   
+  }
+  
+  nav a {
+    text-decoration: none; /* Remove underline */
+    color: #40706a; /* Dark teal color for links */
+    padding: 0.5rem 1rem; /* Add padding for better spacing */
+    margin: 0 10px; /* Space between links */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Add transition for transform */
+    border-radius: 5px; /* Rounded corners */
+    text-align: right;
+  }
+  
+  nav a:hover {
+    background-color: #cad6d7; /* Light blue on hover */
+    color: #70b9ad; /* Darker color on hover */
+    transform: scale(2.0); /* Scale the text to grow */
+  }
+  
+  /* Profile section styles */
+  .profile-section {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically within this section */
+    padding: 2rem; /* Add some padding */
+    max-width: 1000px; /* Maximum width */
+    width: 100%; /* Make it responsive */
+    text-align: center;
+    margin-bottom: 300px;
+  }
+  
+  .profile-description {
+    flex: 1; /* Allow the description to take the remaining space */
+  }
+  
+  .profile-description h1 {
+    font-size: 2rem;
+    color: white; /* Dark teal color for the heading */
+    margin-bottom: 1rem;
+  }
+  
+  .profile-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  
+}
+/* homework.blade.php */
+.homework-section {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the card */
+  padding: 2rem; /* Add some padding */
+}
+
+.homework-card {
+  display: flex; /* Flexbox for horizontal layout */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensure child elements fit within the card */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 800px; /* Limit max width for the card */
+  background-color: #ffffff; /* White background */
+}
+
+.homework-image {
+  flex: 1; /* Allow image section to take space */
+}
+
+.homework-image img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 100px;
+  border-radius: 25px;
+}
+
+.homework-description {
+  flex: 2; /* Allow description to take more space */
+  padding: 1rem; /* Padding for text area */
+}
+
+.homework-description h1 {
+  font-size: 1.8rem; /* Title size */
+  color: white; /* Dark teal color for the title */
+  margin-bottom: 0.5rem; /* Space below title */
+  margin-left: 200px;
+}
+
+.homework-description p {
+  font-size: 1rem; /* Paragraph size */
+  line-height: 1.5; /* Better line spacing */
+  color: #333; /* Dark gray color for text */
+  margin-left: 200px;
+  margin-bottom: 30px;
+
+}
+
+/* CSS for the Routes Lab Activity page */
+.routes-section {
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-start; /* Align items to the left */
+  padding: 50px; /* Add padding around the section */
+}
+
+.routes-description {
+  flex: 2; /* Allow description to take more space */
+  padding: 1rem; /* Padding for text area */
+}
+
+.routes-description h1 {
+  font-size: 1.8rem; /* Title size */
+  color: white; /* Dark color for the title */
+  margin-bottom: 0.5rem; /* Space below title */
+}
+
+.routes-description p {
+  font-size: 1rem; /* Paragraph size */
+  line-height: 1.5; /* Better line spacing */
+  color: whitesmoke; /* Dark gray color for text */
+  margin-bottom: 1rem; /* Space below paragraph */
+}
+
+.routes-image {
+  flex: 1; /* Allow image section to take some space */
+  display: flex;
+  justify-content: center; /* Center the image inside its container */
+  align-items: center;
+  margin-left: auto; /* Push the image to the right */
+}
+
+.routes-image img {
+  width: 400px; /* Reduced width to fit well alongside the text */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded image corners */
+  margin: 50px; /* Adjust margin for spacing */
+}
+
+
+/* for layout */
+.page-title {
+    color: white; /* Dark color for the title */
+    font-size: 2.5em; /* Larger font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.description,
+.summary,
+.layout-description,
+.responsibilities-title {
+    color: white; /* Medium gray for text */
+    margin-bottom: 5px; /* Space below paragraphs */
+}
+
+.responsibilities-list {
+    list-style-type: disc; /* Bullet points for list items */
+    padding-left: 10px; /* Indentation for list */
+    margin: 10px;
+}
+
+.responsibilities-list li {
+    margin-bottom: 20px; /* Space between list items */
+    color: black ;/* Text color for list items */
+}
+
+.layout-image {
+    display: flex;
+    justify-content: center; /* Center the image inside its container */
+    align-items: center;
+    margin: 20px; /* Margin around the image container */
+}
+
+.layout-image img {
+    width: 600px; /* Set the desired smaller width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded image corners */
+}
+.page-title {
+    color: white; /* Dark color for the title */
+    font-size: 2.5em; /* Larger font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.description,
+.summary,
+.layout-description,
+.responsibilities-title {
+    color: white; /* Medium gray for text */
+    margin-bottom: 5px; /* Space below paragraphs */
+}
+
+.responsibilities-list {
+    list-style-type: disc; /* Bullet points for list items */
+    padding-left: 10px; /* Indentation for list */
+    margin: 10px;
+}
+
+.responsibilities-list li {
+    margin-bottom: 20px; /* Space between list items */
+    color: black ;/* Text color for list items */
+}
+
+.layout-image {
+    display: flex;
+    justify-content: center; /* Center the image inside its container */
+    align-items: center;
+    margin: 20px; /* Margin around the image container */
+}
+
+.layout-image img {
+    width: 600px; /* Set the desired smaller width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded image corners */
+}
+/* Middleware*/
+.page-title {
+  color: white; /* Dark color for the title */
+  font-size: 2.5em; /* Larger font size for the title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.description,
+.summary,
+.middleware-description,
+.responsibilities-title {
+  color: white; /* Medium gray for text */
+  margin-bottom: 5px; /* Space below paragraphs */
+}
+
+.responsibilities-list {
+  list-style-type: disc; /* Bullet points for list items */
+  padding-left: 10px; /* Indentation for list */
+  margin: 10px;
+}
+
+.responsibilities-list li {
+  margin-bottom: 20px; /* Space between list items */
+  color: black ;/* Text color for list items */
+}
+
+.middleware-image {
+  display: flex;
+  justify-content: center; /* Center the image inside its container */
+  align-items: center;
+  margin: 20px; /* Margin around the image container */
+}
+
+.middleware-image img {
+  width: 600px; /* Set the desired smaller width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded image corners */
+}
+.page-title {
+  color: white; /* Dark color for the title */
+  font-size: 2.5em; /* Larger font size for the title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.description,
+.summary,
+.middleware-description,
+.responsibilities-title {
+  color: white; /* Medium gray for text */
+  margin-bottom: 5px; /* Space below paragraphs */
+}
+
+.responsibilities-list {
+  list-style-type: disc; /* Bullet points for list items */
+  padding-left: 10px; /* Indentation for list */
+  margin: 10px;
+}
+
+.responsibilities-list li {
+  margin-bottom: 20px; /* Space between list items */
+  color: black ;/* Text color for list items */
+}
+
+.middleware-image {
+  display: flex;
+  justify-content: center; /* Center the image inside its container */
+  align-items: center;
+  margin: 20px; /* Margin around the image container */
+}
+
+.middleware-image img {
+  width: 600px; /* Set the desired smaller width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded image corners */
+}
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3d9681c2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card styles */
+.card {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #7fc7ac;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: rgb(216, 247, 241);
+  margin-bottom: 20px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card {
+      padding: 10px;
+  }
+
+  .card-title {
+      font-size: 2rem;
+  }
+
+  .card-text {
+      font-size: 1rem;
+  }
+}
