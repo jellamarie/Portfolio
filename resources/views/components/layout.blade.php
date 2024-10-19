@@ -8,6 +8,7 @@
 </head>
 <body>
 <header>
+    
     <nav class="navbar">
         <a href="/">Home</a>
         <a href="/homework">Homework</a>
